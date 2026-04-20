@@ -2,7 +2,7 @@ services:
   - type: web
     name: n8n-automation-server
     env: docker
-    plan: starter
+    plan: free
     healthCheckPath: /healthz
     envVars:
       - key: N8N_HOST
@@ -17,7 +17,3 @@ services:
         value: https://n8n-automation-server.onrender.com
       - key: GENERIC_TIMEZONE
         value: Asia/Kolkata
-    disk:
-      name: n8n-data
-      mountPath: /home/node/.n8n
-      sizeGB: 1
