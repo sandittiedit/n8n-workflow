@@ -8,4 +8,3 @@ USER node
 # Render expects the web service to bind to 0.0.0.0
 ENV N8N_HOST=0.0.0.0
 
-CMD ["n8n", "start"]
